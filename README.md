@@ -35,7 +35,7 @@ velero install \
     --bucket velero \
     --secret-file ./credentials-velero \
     --use-volume-snapshots=false \
-    --backup-location-config region=minio,s3ForcePathStyle="true",s3Url=http://minio.velero.svc:9000
+    --backup-location-config region=minio,s3ForcePathStyle="true",s3Url=http://minio.velero.svc:9000 \
     --plugins velero/velero-plugin-for-aws:v1.2.0
 ```
 ### Step 2- Verify and Use Velero:
